@@ -12,10 +12,7 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "js": ["content.js"],
-      "matches": ["https://www.youtube.com/shorts*"]
-    }
-  ]
+  "background": {
+    "service_worker": "background.js"
+  }
 }
